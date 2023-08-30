@@ -8,14 +8,6 @@ class BasicComponent:
         self.group = [Atom(colour) for _ in range(size)]
         self.electronegativity = en
 
-    def get_en(self, other: "BasicComponent"):
-        """ Returns the electronegativity of the component. If the other component
-        is a Carbon instance, it returns the electronegativity of that Carbon object. """
-        from .Carbon import Carbon
-        if isinstance(other, Carbon):
-            return other.get_en(self)
-        return self.electronegativity
-
     @staticmethod
     def rule(cells1: "BasicComponent", cells2: "BasicComponent"):
         """

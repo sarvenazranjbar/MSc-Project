@@ -14,6 +14,8 @@ The natural selection folder contains all the selection files. The colour guid i
 Spatial elimination selection:
 White - Normal cell
 Red - Crossover positive
+Green - Mutation Positive
+
 
 Food selection:
 Yellow - Food patricles

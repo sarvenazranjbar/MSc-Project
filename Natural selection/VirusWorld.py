@@ -9,7 +9,7 @@ class VirusWorld:
             self.width, self.height = window.get_size()
             self.population_size = population_size
             self.cells = []
-            self.virus = Virus(random.randint(0, self.width), random.randint(0, self.height), (0, 0, 255), 10)
+            self.virus = Virus(random.randint(0, self.width), random.randint(0, self.height), (0, 0, 255), 100)
             self.generations = 0
             self.font = pygame.font.Font(None, 30)
             self.next_button = Button(250, 450, 200, 50, (255, 0, 0), 'Next', 20)
